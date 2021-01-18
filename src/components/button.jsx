@@ -3,7 +3,11 @@ import React from 'react';
 class Button extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
+    this.state = { addClass: false };
+  }
+
+  toggle() {
+    this.setState({ addClass: !this.state.addClass });
   }
 
   handleClick() {
@@ -11,8 +15,13 @@ class Button extends React.Component {
   }
 
   render() {
+    let boxClass = ["box"];
+    if (this.state.addClass) {
+      boxClass.push('green');
+    }
+
     return (
-      <button onClick={this.handleClick} className="btn-toggle dark" type="button">
+      <button className={boxClass.join(' ')} type="button" onClick={this.this.toggle.bind(this)}{this.state.addClass ? "Remove a class" : "Add a class (click the box)"}>
         Light mode
       </button>
     );
