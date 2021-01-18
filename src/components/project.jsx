@@ -1,9 +1,9 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 
-// import '../../assets/images/portfolio_1.webp';
-// import '../../assets/images/portfolio_2.webp';
-// import '../../assets/images/portfolio_3.webp';
+// import cocktailImg from '../../assets/images/portfolio_1.webp';
+// import toolImg from '../../assets/images/portfolio_2.webp';
+// import hairImg from '../../assets/images/portfolio_3.webp';
 
 class Project extends React.Component {
   render() {
@@ -11,25 +11,25 @@ class Project extends React.Component {
       {
         title: 'The Healthy Hair Hub',
         url: '#',
-        img: 'portfolio_3.webp',
+        // img: hairImg,
         blurb: "Ruby on Rails project to promote learning about styling and caring for Afro Caribbean hair. Worked collaboratively with my team on both front and back end to deliver a beautiful web app in 9 days."
       },
       {
         title: 'Open Tool Box',
         url: '#',
-        img: 'portfolio_2.webp',
+        // img: toolImg,
         blurb: 'Boo'
       },
       {
         title: 'Mister Cocktail',
         url: '#',
-        img: 'portfolio_1.webp',
+        // img: cocktailImg,
         blurb: 'Boo'
       }
     ];
 
     return (
-      <div className="project-card">
+      <div className="project-cards">
 
         {projectList.map((project) => {
           return (

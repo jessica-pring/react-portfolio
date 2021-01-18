@@ -3,18 +3,23 @@ import React from 'react';
 
 import Nav from './nav';
 import ProjectList from './project_list';
+import Button from './button';
 
 class App extends React.Component {
   render() {
     return (
       <div className="content">
-        <div id="navbar">
-          <Nav />
-        </div>
+        <div className="landing" id="home">
+          <div id="navbar">
+            <Nav />
+          </div>
 
-        <div id="header">
-          <h1>Jessica Pring</h1>
-          <p>Full Stack Web Developer</p>
+          {/* <Button /> */}
+
+          <div id="header">
+            <h1>Jessica Pring</h1>
+            <p>Full Stack Web Developer</p>
+          </div>
         </div>
 
         <div id="projects">

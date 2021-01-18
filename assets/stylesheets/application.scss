@@ -1,11 +1,59 @@
 body {
   font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  background-color: #0D1B1E;
+  color: #e0e1dd;
 }
 
 #root {
   height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.header {
-  text-align: center;
+.landing {
+  height: 100vh;
+}
+
+#navbar {
+  top: 0;
+  position: sticky;
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      padding: 5px 10px;
+      a {
+        text-decoration: none;
+        color: #e0e1dd;
+        transition: .2s ease-out;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+#header {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#projects {
+  min-height: 90vh;
+  .main-card {
+    margin: 3em 0;
+  }
+}
+
+.btn-toggle {
+  background-color: white;
+  color: black;
 }
