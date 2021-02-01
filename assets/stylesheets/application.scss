@@ -1,9 +1,8 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0D1B1E;
-  color: #e0e1dd;
+  color: #0D1B1E;
 }
 
 #root {
@@ -28,8 +27,8 @@ body {
       padding: 5px 10px;
       a {
         text-decoration: none;
-        color: #e0e1dd;
-        transition: .2s ease-out;
+        color: #0D1B1E;
+        transition: .2s ease-in;
         &:hover {
           opacity: 0.7;
         }
@@ -44,6 +43,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  h1 {
+    text-transform: uppercase;
+  }
 }
 
 #projects {
