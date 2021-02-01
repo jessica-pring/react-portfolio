@@ -3,7 +3,6 @@ import React from 'react';
 
 import Nav from './nav';
 import ProjectList from './project_list';
-import Button from './button';
 
 class App extends React.Component {
   render() {
@@ -13,8 +12,6 @@ class App extends React.Component {
           <div id="navbar">
             <Nav />
           </div>
-
-          {/* <Button /> */}
 
           <div id="header">
             <h1>Jessica Pring</h1>
